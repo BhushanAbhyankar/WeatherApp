@@ -13,7 +13,7 @@ class WeatherCityServiceManager: NSObject {
 
     func createRequestToFetchCityData(cityId: String, availableTestResponseHandler: @escaping AvailableTestResponseHandler)  {
         // Set up the URL request
-        let todoEndpoint: String = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&APPID=aecb8f27fb420ee205e98d72b028da5a"
+        let todoEndpoint: String = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&APPID=APIKEy"
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
